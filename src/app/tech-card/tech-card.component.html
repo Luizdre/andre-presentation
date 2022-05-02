@@ -1,0 +1,34 @@
+<!-- <div class="main-card">
+
+        <div class="tech-card">
+            <div *ngIf="tech.asset.length == 1" class="tech-icon">
+                <img src="{{tech.asset[0]}}" alt="Technology icon" class="tech-icon">
+            </div>
+            <div  *ngIf="tech.asset.length > 1" class="tech-icon">
+                <img *ngFor="let item of tech.asset" src="{{item}}" alt="Technology icon" class="tech-icon">
+            </div>
+            <p class="tech-name">{{tech.name}}</p>
+        </div>  
+
+    <div class="flip-card-back">
+        <img src="{{tech.asset[0]}}" alt="Technology icon" class="tech-icon">
+        </div>
+</div> -->
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div *ngIf="tech.asset.length == 1" class="tech-icon">
+            <img src="{{tech.asset[0]}}" alt="Technology icon" class="tech-icon">
+        </div>
+        <div  *ngIf="tech.asset.length > 1" class="tech-icon">
+            <img *ngFor="let item of tech.asset" src="{{item}}" alt="Technology icon" class="tech-icon">
+        </div>
+        <p class="tech-name">{{tech.name}}</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>{{tech.name}}</h1>
+        <p>{{tech.description}}</p>
+      </div>
+    </div>
+  </div>

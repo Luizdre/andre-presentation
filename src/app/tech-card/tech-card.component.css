@@ -1,0 +1,105 @@
+
+
+  .tech-icon{
+    height: 7vh;
+    margin: auto auto auto auto;
+    user-select: none;
+  }
+
+@keyframes text{
+    from {
+        background-position: 200% center;
+      }
+}
+
+@media (min-width: 1280px) {
+  .flip-card {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 10%;
+    width: 12vw;
+    height: 20vw;
+    perspective: 1000px;
+  }
+
+  .tech-name{
+    font-size: 25px;
+    background: linear-gradient(to right, #FFF 20%, #000 40%, #000 60%, #FFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 85%;
+    animation: text 6s linear infinite;
+    user-select: none;
+}
+}
+
+@media (max-width: 1279px) {
+  .flip-card {
+    background-color: transparent;
+    border: 1px solid white;
+    padding-bottom: 20vh;
+    padding-top: 10vh;
+    border-radius: 10%;
+    width: 50%;
+    height: 50%;
+
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p, h1{
+    font-size: 35px;
+  }
+
+  .tech-name{
+    font-size: 50px;
+    background: linear-gradient(to right, #FFF 20%, #000 40%, #000 60%, #FFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 85%;
+    animation: text 6s linear infinite;
+    user-select: none;
+}
+  
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    margin: auto auto auto auto;
+    display: grid;
+    cursor: pointer;
+  }
+  
+  .flip-card-back {
+    color: white;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+  }
+
+  p, h1{
+    user-select: none;
+  }
