@@ -12,7 +12,7 @@
       }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .flip-card {
     background-color: transparent;
     border: 1px solid white;
@@ -35,7 +35,7 @@
 }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1025px) {
   .flip-card {
     background-color: transparent;
     border: 1px solid white;
