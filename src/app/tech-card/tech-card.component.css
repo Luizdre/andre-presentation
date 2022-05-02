@@ -12,7 +12,7 @@
       }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .flip-card {
     background-color: transparent;
     border: 1px solid white;
@@ -35,7 +35,7 @@
 }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1025px) {
   .flip-card {
     background-color: transparent;
     border: 1px solid white;
@@ -44,18 +44,17 @@
     border-radius: 10%;
     width: 50%;
     height: 50%;
-
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
-
   p, h1{
-    font-size: 35px;
+    font-size: 15px;
+    user-select: none;
   }
 
   .tech-name{
-    font-size: 50px;
+    font-size: 30px;
     background: linear-gradient(to right, #FFF 20%, #000 40%, #000 60%, #FFF 80%);
     background-size: 200% auto;
     background-clip: text;
@@ -101,6 +100,5 @@
   }
 
   p, h1{
-
     user-select: none;
   }
